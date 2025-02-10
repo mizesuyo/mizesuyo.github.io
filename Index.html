@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱心示例</title>
+    <style>
+        /* 定义爱心的样式 */
+      .heart {
+            width: 100px;
+            height: 90px;
+            position: relative;
+        }
+
+      .heart:before,
+      .heart:after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50px 50px 0 0;
+        }
+
+      .heart:before {
+            left: 0px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+      .heart:after {
+            left: 40px;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 放置爱心的容器 -->
+    <div class="heart"></div>
+</body>
+
+</html>
